@@ -30,6 +30,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  passenger
   rack-cors
   shotgun
   sinatra
