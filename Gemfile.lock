@@ -1,12 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    daemon_controller (1.2.0)
     json (1.8.1)
     mime-types (1.25.1)
+    passenger (4.0.53)
+      daemon_controller (>= 1.2.0)
+      rack
+      rake (>= 0.8.1)
     rack (1.5.2)
     rack-cors (0.2.9)
     rack-protection (1.5.3)
       rack
+    rake (10.3.2)
     rdoc (4.1.2)
       json (~> 1.4)
     rest-client (1.6.8)
@@ -26,6 +32,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  passenger
   rack-cors
   shotgun
   sinatra
